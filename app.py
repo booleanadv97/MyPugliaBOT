@@ -45,6 +45,20 @@ def send_message(chat_id, text):
   if response.status_code != 200:
     print(f"Error while sending the message: {response.text}")
 
+
+def is_in_apulia(address):
+  coords = gmaps.geocode(address)
+  if coords:
+    lat = coords[0]["geometry"]["location"]["lat"]
+    lng = coords[0]["geometry"]["location"]["lng"]
+    reverse_geocode_result = gmaps.reverse_geocode((lat, lng))
+    for result in reverse_geocode_result:
+        for component in result['address_components']:
+            if 'administrative_area_level_1' in component['types']:  
+                region = component['long_name']
+                break
+    return region == "Apulia"
+
 def get_coords(place):
   coords = gmaps.geocode(place)
   if coords:
@@ -95,27 +109,27 @@ def get_current_weather(api_key, city_name):
     except Exception as e:
         return f"Error fetching weather data: {e}"
 
-def get_places(city_name, search_type, search_radius=5000):
+def get_places(position, search_type, search_radius=5000):
   try:
-    lat,lng = get_coords(city_name)
-    if lat and lng:
-      # Build the attractions API request
-      places = gmaps.places_nearby(
-          location=(lat, lng), radius=search_radius, type=search_type
-      )
+      lat,lng = get_coords(position)
+      if lat and lng:
+        # Build the attractions API request
+        places = gmaps.places_nearby(
+            location=(lat, lng), radius=search_radius, type=search_type
+        )
 
-      result = []
-      for place in places["results"]:
-        place_data = {
-          "name": place["name"],
-          "address": place["vicinity"],
-          "lat": place["geometry"]["location"]["lat"],
-          "lng": place["geometry"]["location"]["lng"],
-        }
-        result.append(place_data)
-      return result
-    else:
-      print(f"Error location not found: {city_name}")
+        result = []
+        for place in places["results"]:
+          place_data = {
+            "name": place["name"],
+            "address": place["vicinity"],
+            "lat": place["geometry"]["location"]["lat"],
+            "lng": place["geometry"]["location"]["lng"],
+          }
+          result.append(place_data)
+        return result
+      else:
+        print(f"Error location not found: {position}")
   except googlemaps.exceptions.HTTPError as err:
     print(f"Error during API request: {err}")
   return None
@@ -146,11 +160,11 @@ def process_message():
   elif intent == "UserProvidesLocation":
     location = data['queryResult']['parameters'].get('location', None)
     response = str(location)
-    if location:
+    if location and is_in_apulia(location['city']):
       context = data['queryResult']['outputContexts'][0]['name']
       if "userrequestattractions" in context:
-        attractions = get_places(location['street-address'] +", "+ location['city'],"tourist_attraction")
-        response = "Here's a list of nearby attractions: \n\n" + build_list_of_places(attractions)
+          attractions = get_places(location['street-address'] +", "+ location['city'],"tourist_attraction")
+          response = "Here's a list of nearby attractions: \n\n" + build_list_of_places(attractions)
       elif "userrequestlodging" in context:
         accomodations = get_places(location['street-address'] +", "+ location['city'], "lodging")
         response = "Here's a list of nearby accomodations: \n\n" + build_list_of_places(accomodations)
@@ -161,5 +175,7 @@ def process_message():
         response = get_current_weather(WEATHER_API_KEY, location['city'])
       elif "userrequesttrafficupdate" in context:
         response = get_traffic_flow(location['street-address'] +", "+ location['city'])
+    else:
+       response = "Invalid location, please provide a correct location within Apulia."
   send_message(chat_id, response)
   return jsonify({"fulfillmentText": response})   
