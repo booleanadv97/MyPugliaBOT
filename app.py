@@ -5,36 +5,42 @@ import googlemaps
 import random
 
 # API keys
-BOT_TOKEN = "7359117515:AAGgeMyoN7sQ0VbEMQI0Bnx9B48FMXVMzto"
-TOMTOM_API = "bug3YWud39DJDANkBAVsTn3DEuONsGRj"
-WEATHER_API_KEY = "a26d52cbb20d67a2adb5379a13c920a7"
+BOT_TOKEN = "REPLACE_WITH_YOUR_TELEGRAM_API_KEY"
+TOMTOM_API = "REPLACE_WITH_YOUR_TOMTOM_API_KEY"
+WEATHER_API_KEY = "REPLACE_WITH_YOUR_WEATHER_API_KEY"
 
 app = Flask(__name__)
 
 # Google maps configuration
 gmaps = googlemaps.Client(key="AIzaSyBCg-wRG41EjUesSn3Z6hEjPoZG3BbDQEE")
 
-# TO-DO multilingual support 
-def puglia_facts():
-    number = int(random.uniform(0, 7))
-    if number == 0:
-        return "Miracles in Lecce: In Piazza Sant\'Oronzo, the eighteenth-century statue of the Patron Saint sits on a bare column, originally from the town of Brindisi. This column marked the end of the Via Appia, one of the most important roads in Ancient Rome. It was donated by the people of Brindisi to the Patron Saint of Lecce, when the town was miraculously spared by the plague that ravaged Salento in the seventeenth century."
-    elif number == 1:
-        return "Swindlers in Alberobello: Famous for its trulli, one of the house styles you can only find in Puglia, this town was gifted to the first Count of Conversano by Robert of Anjou, as a reward for taking part in the Crusades. The oldest trulli date back to the fourteenth century and they were built without mortar so that they could be easily dismantled in case the emissaries of the Kingdom of Naples, which imposed heavy taxes on any new house, came by to check on the inhabitants."
-    elif number == 2:
-        return "Gods and dolphins in Taranto: According to Greek mythology, Taras was the son of the nymph Satyria and Neptune, the god of the sea. He was the head of a fleet that arrived on the banks of the river where the town was later built. He immediately started offering sacrifices to thank his father for the good voyage they had and to enquire whether it was wise to build a town here when suddenly he saw a dolphin jump into the waters of the river. The young man interpreted this apparition as a sign of Neptune\'s encouragement to found Taranto."
-    elif number == 3:
-        return "Along the Templar trail in Puglia: The history of the Knights Templar is certainly one of the most famous and fascinating in Christian history. Many people are familiar with it but few know that the Knights of Christ and the Temple of Solomon were also present in Puglia. The first official document attesting to the presence of the Templars in the region dates back to 1143."
-    elif number == 4:
-        return "Puglia is home to over 50 million olive trees: Many of them centuries old. Puglia needed to enact laws to deter people from other parts of Italy coming down and digging up those valuable olive trees to bring them back and plant them on their land. It\'s now illegal to dig up a tree from Puglian soil."
-    elif number == 5:
-        return "Puglia is famous for its olive oil production: The region provides around 40% of the country\'s olive oil, which amounts to around 300,000 tonnes every single year."
-    elif number == 6:
-        return "Puglia has the longest coastline of any Italian mainland region: The heel of Italy\'s boot-like shape is the defining geographical feature of the area, and is a key reason behind the flowing lengths of coast, totalling around 800km."
-    elif number == 7:
-        return "Puglia was originally colonised by Mycenaean Greeks: One of Italy\'s most archaeologically interesting areas, Puglia is an absolute hub for history."
-    else:
-        return "Puglia is pure magic."
+def puglia_facts(lang='en'):
+    facts = {
+        'en': [
+            "Miracles in Lecce: In Piazza Sant'Oronzo, the eighteenth-century statue of the Patron Saint sits on a bare column, originally from the town of Brindisi. This column marked the end of the Via Appia, one of the most important roads in Ancient Rome. It was donated by the people of Brindisi to the Patron Saint of Lecce, when the town was miraculously spared by the plague that ravaged Salento in the seventeenth century.",
+            "Swindlers in Alberobello: Famous for its trulli, one of the house styles you can only find in Puglia, this town was gifted to the first Count of Conversano by Robert of Anjou, as a reward for taking part in the Crusades. The oldest trulli date back to the fourteenth century and they were built without mortar so that they could be easily dismantled in case the emissaries of the Kingdom of Naples, which imposed heavy taxes on any new house, came by to check on the inhabitants.",
+            "Gods and dolphins in Taranto: According to Greek mythology, Taras was the son of the nymph Satyria and Neptune, the god of the sea. He was the head of a fleet that arrived on the banks of the river where the town was later built. He immediately started offering sacrifices to thank his father for the good voyage they had and to enquire whether it was wise to build a town here when suddenly he saw a dolphin jump into the waters of the river. The young man interpreted this apparition as a sign of Neptune's encouragement to found Taranto.",
+            "Along the Templar trail in Puglia: The history of the Knights Templar is certainly one of the most famous and fascinating in Christian history. Many people are familiar with it but few know that the Knights of Christ and the Temple of Solomon were also present in Puglia. The first official document attesting to the presence of the Templars in the region dates back to 1143.",
+            "Puglia is home to over 50 million olive trees: Many of them centuries old. Puglia needed to enact laws to deter people from other parts of Italy coming down and digging up those valuable olive trees to bring them back and plant them on their land. It's now illegal to dig up a tree from Puglian soil.",
+            "Puglia is famous for its olive oil production: The region provides around 40% of the country's olive oil, which amounts to around 300,000 tonnes every single year.",
+            "Puglia has the longest coastline of any Italian mainland region: The heel of Italy's boot-like shape is the defining geographical feature of the area, and is a key reason behind the flowing lengths of coast, totalling around 800km.",
+            "Puglia was originally colonised by Mycenaean Greeks: One of Italy's most archaeologically interesting areas, Puglia is an absolute hub for history.",
+            "Puglia is pure magic."
+        ],
+        'it': [
+            "Miracoli a Lecce: In Piazza Sant'Oronzo, la statua settecentesca del Santo Patrono si trova su una colonna nuda, originariamente della città di Brindisi. Questa colonna segnava la fine della Via Appia, una delle strade più importanti dell'Antica Roma. Fu donata dal popolo di Brindisi al Santo Patrono di Lecce, quando la città fu miracolosamente risparmiata dalla peste che devastò il Salento nel XVII secolo.",
+            "Truffatori ad Alberobello: Famosa per i suoi trulli, uno degli stili di casa che si possono trovare solo in Puglia, questa città fu donata al primo Conte di Conversano da Roberto d'Angiò, come ricompensa per aver partecipato alle Crociate. I trulli più antichi risalgono al XIV secolo e furono costruiti senza malta in modo che potessero essere facilmente smontati nel caso in cui gli emissari del Regno di Napoli, che imponevano pesanti tasse su ogni nuova casa, passassero a controllare gli abitanti.",
+            "Dei e delfini a Taranto: Secondo la mitologia greca, Taras era il figlio della ninfa Satyria e di Nettuno, il dio del mare. Era a capo di una flotta che arrivò sulle rive del fiume dove in seguito fu costruita la città. Iniziò subito ad offrire sacrifici per ringraziare suo padre per il buon viaggio che avevano fatto e per chiedere se fosse saggio costruire una città qui quando all'improvviso vide un delfino saltare nelle acque del fiume. Il giovane interpretò questa apparizione come un segno dell'incoraggiamento di Nettuno a fondare Taranto.",
+            "Lungo la via dei Templari in Puglia: La storia dei Cavalieri Templari è certamente una delle più famose e affascinanti della storia cristiana. Molte persone la conoscono ma pochi sanno che i Cavalieri di Cristo e del Tempio di Salomone erano presenti anche in Puglia. Il primo documento ufficiale che attesta la presenza dei Templari nella regione risale al 1143.",
+            "La Puglia ospita oltre 50 milioni di ulivi: Molti di essi secolari. La Puglia ha dovuto emanare leggi per dissuadere le persone da altre parti d'Italia a scendere e scavare quegli ulivi preziosi per riportarli indietro e piantarli sulla loro terra. Ora è illegale scavare un albero dal suolo pugliese.",
+            "La Puglia è famosa per la sua produzione di olio d'oliva: La regione fornisce circa il 40% dell'olio d'oliva del paese, che ammonta a circa 300.000 tonnellate ogni anno.",
+            "La Puglia ha la costa più lunga di qualsiasi regione italiana continentale: Il tacco della forma a stivale dell'Italia è la caratteristica geografica che definisce l'area, ed è la ragione principale dietro le lunghezze fluttuanti della costa, che totalizzano circa 800km.",
+            "La Puglia fu originariamente colonizzata dai Greci Micenei: Una delle aree archeologicamente più interessanti d'Italia, la Puglia è un vero e proprio centro per la storia.",
+            "La Puglia è pura magia."
+        ]
+    }
+    number = int(random.uniform(0, len(facts[lang])))
+    return facts[lang][number]
 
 
 
@@ -192,9 +198,9 @@ def process_message():
       response = "Sure, please provide your current location so that I can provide you real-time weather information."
   elif intent == "Trivia":
     if language == "it":
-      response = "Ecco un fatto interessante sulla Puglia:"
+      response = "Ecco un fatto interessante sulla Puglia: \n\n" + puglia_facts("it")
     else: 
-      response = "Here's an interesting fact about Puglia: \n\n" + puglia_facts()
+      response = "Here's an interesting fact about Puglia: \n\n" + puglia_facts("en")
   elif intent == "UserProvidesLocation":
     location = data['queryResult']['parameters'].get('location', None)
     response = str(location)
