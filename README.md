@@ -5,7 +5,7 @@
 You can give it a try yourself on [Telegram](https://t.me/MyPuglia_bot).
 ## Setup
 - To run the virtual guide you need to provide the API key for each of the following services: Telegram, Google Maps, OpenWeatherMap and TomTom.
-- After that you will have to create the **intents** and specify the **training phrases** for _Google's Dialogflow_.
+- After that you will have to [create the intents](dialogflow-intents/README.md) and specify the **training phrases** for _Google's Dialogflow_.
 - Once you've done that you can proceed with the setup of the **webhook** to **app.py**.
 ## Features
   ### Find the Nearest Hotel 🏨
