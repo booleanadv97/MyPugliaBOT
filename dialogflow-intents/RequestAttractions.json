@@ -1,0 +1,304 @@
+{
+  "id": "176e39d5-7b05-49c1-bafd-2a154ced6764",
+  "name": "RequestAttractions",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "userRequestAttractions",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "location",
+          "dataType": "@sys.location",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$location",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "unit-weight-name",
+          "dataType": "@sys.unit-weight-name",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$unit-weight-name",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "music-artist",
+          "dataType": "@sys.music-artist",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$music-artist",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Dove posso esplorare?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "174cf029-bc13-4b1a-8630-a3c1c5c37b10",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Suggerisci attrazioni nella zona",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "744bc72a-4184-4ba1-81b3-f280d81d2ad7",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Scopri i punti di interesse",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "87720e13-7cf0-4a5d-8450-c2e6cb823557",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Mostrami ",
+          "userDefined": false
+        },
+        {
+          "text": "le attrazioni locali",
+          "userDefined": false,
+          "alias": "location",
+          "meta": "@sys.location"
+        }
+      ],
+      "count": 0,
+      "id": "c839c657-7022-4cf0-80e8-b8ad56343ac3",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Consiglia punti turistici",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "669c460b-9c1d-425a-877f-6ad2648ee9a3",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Quali sono ",
+          "userDefined": false
+        },
+        {
+          "text": "i luoghi",
+          "userDefined": false,
+          "alias": "location",
+          "meta": "@sys.location"
+        },
+        {
+          "text": " più popolari da visitare",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "ec3eac53-9ff8-464a-8dd4-934b33c1d36e",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Trova ",
+          "userDefined": false
+        },
+        {
+          "text": "le attrazioni",
+          "userDefined": false,
+          "alias": "location",
+          "meta": "@sys.location"
+        },
+        {
+          "text": " nelle vicinanze",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "ef4c5945-096b-49c8-8e49-2d644226870d",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Suggest attractions in the area",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "c991a551-0174-4ade-8fe9-7461f462fe84",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Guide ",
+          "userDefined": false
+        },
+        {
+          "text": "me",
+          "userDefined": false,
+          "alias": "unit-weight-name",
+          "meta": "@sys.unit-weight-name"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "to",
+          "userDefined": false,
+          "alias": "music-artist",
+          "meta": "@sys.music-artist"
+        },
+        {
+          "text": " famous landmarks",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "2173f0bd-1c57-4cc3-adf0-2926004de88b",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Where can I explore",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "b1181980-8950-496a-93a3-0af1fd41d9d8",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Discover points of interest",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "cfce6f94-d95c-4a24-a03e-22d67367ade3",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Show me local",
+          "userDefined": false,
+          "alias": "location",
+          "meta": "@sys.location"
+        },
+        {
+          "text": " attractions",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "0533eade-7f6d-4c8f-97f4-ee2329536d40",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Recommend tourist spots",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "f65094b9-1265-4356-86d2-35b7f800d29d",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Find nearby attractions",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "13fdd7ab-de42-4193-a70b-75964f1fe6fb",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": true
+}

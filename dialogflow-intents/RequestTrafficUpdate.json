@@ -1,0 +1,152 @@
+{
+  "id": "fa926369-895d-40b9-82d0-738a2c1f1678",
+  "name": "RequestTrafficUpdate",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "userRequestTrafficUpdate",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Ci sono ritardi nel traffico sul mio percorso?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "8aa0d782-734a-4fd9-9803-a10be1799197",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Ci sono stati segnalati incidenti?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "9b6297c0-3101-4fec-858c-1b136517c9ba",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "C'è traffico intenso nelle vicinanze?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "28ef6bbe-5292-47a2-b057-fcdcb99b6d11",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Ci sono incidenti vicini?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "06931b27-0de2-4c95-bb2c-3993e1de23d0",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Com'è il traffico?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "b35bda23-e620-49f5-9309-3ed13c2ef230",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Any accidents reported?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "bdf42e11-e7b9-4400-aadc-29d47508244c",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Is there heavy traffic near",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "b8ff80c9-9da3-40bf-96cb-d5bc739ba632",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "How's the traffic",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "5533571d-5f96-4920-aab0-8b13dc9ab09c",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Are there any traffic delays on my route?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "c52a113b-ebb1-4798-85e9-f9c43e718794",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": true
+}

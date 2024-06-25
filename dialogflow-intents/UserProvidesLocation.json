@@ -1,0 +1,239 @@
+{
+  "id": "9ce20ac8-8cf1-4e51-803f-f73b2131e0e5",
+  "name": "UserProvidesLocation",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "location",
+          "dataType": "@sys.location",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$location",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "unit-length-name",
+          "dataType": "@sys.unit-length-name",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$unit-length-name",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "unit-length-name1",
+          "dataType": "@sys.unit-length-name",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$unit-length-name1",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Attualmente ",
+          "userDefined": false
+        },
+        {
+          "text": "mi",
+          "userDefined": false,
+          "alias": "unit-length-name",
+          "meta": "@sys.unit-length-name"
+        },
+        {
+          "text": " trovo",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "90f81322-dcd8-4024-8dd3-df9c092ede97",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Sono a",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "533003ee-2091-45d1-9d84-01f795bc220e",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Sono ",
+          "userDefined": false
+        },
+        {
+          "text": "in",
+          "userDefined": false,
+          "alias": "unit-length-name",
+          "meta": "@sys.unit-length-name"
+        }
+      ],
+      "count": 0,
+      "id": "067c602b-ed2e-45f6-8b13-de9e5c936992",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Mi",
+          "userDefined": false,
+          "alias": "unit-length-name",
+          "meta": "@sys.unit-length-name"
+        },
+        {
+          "text": " trovo ",
+          "userDefined": false
+        },
+        {
+          "text": "in",
+          "userDefined": false,
+          "alias": "unit-length-name1",
+          "meta": "@sys.unit-length-name"
+        }
+      ],
+      "count": 0,
+      "id": "496f76a4-ea1d-4160-8b72-493a07963af5",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "La mia posizione è",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "ae560fa5-28bb-4238-869d-eddd420c11ab",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I ",
+          "userDefined": false
+        },
+        {
+          "text": "am in",
+          "userDefined": false,
+          "alias": "location",
+          "meta": "@sys.location"
+        }
+      ],
+      "count": 0,
+      "id": "4f771347-9def-4676-9810-06b5fca248c7",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I am currently ",
+          "userDefined": false
+        },
+        {
+          "text": "in",
+          "userDefined": false,
+          "alias": "location",
+          "meta": "@sys.location"
+        }
+      ],
+      "count": 0,
+      "id": "443dc4c2-0c08-4ed5-986f-ca3df8506f7e",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "My position ",
+          "userDefined": false
+        },
+        {
+          "text": "is",
+          "userDefined": false,
+          "alias": "location",
+          "meta": "@sys.location"
+        }
+      ],
+      "count": 0,
+      "id": "54bd7569-9c2b-4380-9272-c4d46b9d21bb",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "My ",
+          "userDefined": false
+        },
+        {
+          "text": "location is",
+          "userDefined": false,
+          "alias": "location",
+          "meta": "@sys.location"
+        }
+      ],
+      "count": 0,
+      "id": "0e846faa-2f4c-48b8-85fc-cfeb25d21361",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": true
+}

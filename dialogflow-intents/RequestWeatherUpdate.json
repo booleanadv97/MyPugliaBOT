@@ -1,0 +1,164 @@
+{
+  "id": "eb3409f3-fd16-4fdf-a55e-32172bc0175a",
+  "name": "RequestWeatherUpdate",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "userRequestWeatherUpdate",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "meteo",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "f5ccb57a-c803-4759-a4d0-5f60f50e0873",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Quali sono le condizioni meteorologiche attuali",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "ce4658bc-ec78-4314-8f39-96f538519526",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Com'è il tempo oggi?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "da87d396-2dd7-452b-b7a4-07ec52de9876",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Pioverà?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "ee2c9d07-55f6-4e5b-9f07-ea28c6f6840b",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Qual'è l'indice UV",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "2cb327bd-fd4f-46b9-9ede-6efade45d8ab",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "What's the UV index today?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "e0005748-7517-445c-9e77-e4724cb13df6",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Any storms expected?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "1bd9783b-22ee-46fc-a62c-3781dd17c106",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Is it going to rain later?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "c7d33d89-b074-48e9-a231-d72ad096b4db",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Give me the current weather conditions.",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "994be4ca-c472-4783-b3d4-c2d92773f7ce",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "What's the weather like today?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "e355351f-04c9-4587-b55b-b26f1ca05443",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": true
+}

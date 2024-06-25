@@ -1,0 +1,103 @@
+{
+  "id": "f1df9b57-2cd3-42cd-abdd-3c3f8533dbe4",
+  "name": "Start",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [
+    {
+      "name": "TELEGRAM_WELCOME"
+    }
+  ],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Ciao",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "b4631fa5-ffc5-492d-b7b7-5aeca7c82c68",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Comincia",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "bdf0c1f1-6995-41dd-9882-414a251feec7",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Inizia",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "e4b866ba-7e2b-4cbf-a16e-d84672e2d8e6",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "start",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "d7c35b9b-7464-4071-a956-ab2e32ef0e3e",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "/start",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "d1ff9c47-88f3-4e21-9027-68315efe21c4",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": true
+}

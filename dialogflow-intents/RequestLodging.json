@@ -1,0 +1,292 @@
+{
+  "id": "9031eb88-2f64-4d95-9a4a-c4f7fc806778",
+  "name": "RequestLodging",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "userRequestLodging",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "location",
+          "dataType": "@sys.location",
+          "isList": true,
+          "required": false,
+          "prompts": [],
+          "value": "$location",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Suggeriscimi ",
+          "userDefined": false
+        },
+        {
+          "text": "un posto",
+          "userDefined": false,
+          "alias": "location",
+          "meta": "@sys.location"
+        },
+        {
+          "text": " dove alloggiare",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "05dc1763-00d6-4439-be10-4866841bdb03",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Cerca ",
+          "userDefined": false
+        },
+        {
+          "text": "hotel nelle vicinanze",
+          "userDefined": false,
+          "alias": "location",
+          "meta": "@sys.location"
+        }
+      ],
+      "count": 0,
+      "id": "4129b2f7-fc4f-4dc9-8b9c-eab5796375cd",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Consigliami ",
+          "userDefined": false
+        },
+        {
+          "text": "un hotel",
+          "userDefined": false,
+          "alias": "location",
+          "meta": "@sys.location"
+        }
+      ],
+      "count": 0,
+      "id": "04ed9e09-90a4-4db4-9360-3ad65c869370",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Sto cercando ",
+          "userDefined": false
+        },
+        {
+          "text": "un alloggio",
+          "userDefined": false,
+          "alias": "location",
+          "meta": "@sys.location"
+        }
+      ],
+      "count": 0,
+      "id": "4370783d-b940-4589-b7a8-fcc6ef17416f",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Ho bisogno di ",
+          "userDefined": false
+        },
+        {
+          "text": "un posto",
+          "userDefined": false,
+          "alias": "location",
+          "meta": "@sys.location"
+        },
+        {
+          "text": " dove ",
+          "userDefined": false
+        },
+        {
+          "text": "stare",
+          "userDefined": false,
+          "alias": "location",
+          "meta": "@sys.location"
+        }
+      ],
+      "count": 0,
+      "id": "6386375d-33b1-4d8f-899d-693e2f3c9d5f",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Trova ",
+          "userDefined": false
+        },
+        {
+          "text": "un hotel vicino",
+          "userDefined": false,
+          "alias": "location",
+          "meta": "@sys.location"
+        },
+        {
+          "text": " a me",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "3c2a5192-2de1-41ae-8590-4ad349bfcaf7",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Suggest a place to stay",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "f74760f1-d7bd-4c03-ab0b-d55419b6bbda",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Hotel options",
+          "userDefined": false,
+          "alias": "location",
+          "meta": "@sys.location"
+        },
+        {
+          "text": ", please",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "2e11d3fb-f632-41fe-9ab7-7d8922051479",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Search for nearby ",
+          "userDefined": false
+        },
+        {
+          "text": "hotels",
+          "userDefined": false,
+          "alias": "location",
+          "meta": "@sys.location"
+        }
+      ],
+      "count": 0,
+      "id": "8a745a64-cb37-4b0b-bdf3-f70cced40a2b",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Recommend a ",
+          "userDefined": false
+        },
+        {
+          "text": "hotel",
+          "userDefined": false,
+          "alias": "location",
+          "meta": "@sys.location"
+        }
+      ],
+      "count": 0,
+      "id": "a884b3e4-50f8-49b5-8860-6a98dbc65f3b",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Looking for accomodations",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "5bce4044-cd13-4642-b82d-9d6e75b7f0f5",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I need a place to stay",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "bae8289d-3218-4dc9-94f5-de340d7073bf",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Find a ",
+          "userDefined": false
+        },
+        {
+          "text": "hotel near me",
+          "userDefined": false,
+          "alias": "location",
+          "meta": "@sys.location"
+        }
+      ],
+      "count": 0,
+      "id": "3e3817ab-a060-44f3-8eb3-736c3c2e30b3",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": true
+}

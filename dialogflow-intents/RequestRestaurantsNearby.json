@@ -1,0 +1,140 @@
+{
+  "id": "46a878ab-e658-4205-8f72-f9e3cdb25725",
+  "name": "RequestRestaurantsNearby",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "userRequestRestaurant",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Dove posso mangiare?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "38fd0077-2522-49f8-9cd7-b6cf70386380",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Places to eat nearby?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "ddf2a0b5-937e-4457-ba22-4690da859729",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Restaurants nearby?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "afcaad7f-bddf-4c99-a19f-a1b72e8a2e0f",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I need to eat",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "e7cc379b-e7b8-4520-9077-479afbe8c038",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I'm hungry",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "a2ef54df-cc58-42f6-ba7d-cd06608866e2",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Ho fame",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "12a63828-c23c-43bb-9d8f-95f29d834d32",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Voglio mangiare",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "e99b3470-011f-41a8-b4d4-e76f4368b6df",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Ristoranti in vicinanza?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "f193faf0-55e2-4f9c-a166-3c92d265b7cc",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": true
+}

@@ -1,0 +1,111 @@
+{
+  "id": "14e1f630-dc91-494f-9e6c-1e9499e58ec7",
+  "name": "Help",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "info",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "98238887-07e2-41f9-938f-4545b712630d",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "informazioni",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "f08ad2f0-9d79-48c2-836f-d97db61d9b8a",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "aiutami",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "a62b62b5-93a6-42b4-b467-3170e650e294",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "/help",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "0254f647-ebd9-484f-a8aa-8e3b52755127",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "help",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "dc8beb18-03cf-43d3-bc8f-f338617335b9",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "aiuto",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "efb52ee7-a774-4723-8d19-253d11ff2920",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": true
+}

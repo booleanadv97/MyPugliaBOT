@@ -1,0 +1,111 @@
+{
+  "id": "688781f1-7ded-4c99-8488-fb6fc92072ad",
+  "name": "Trivia",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Curiosità",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "cdc7e2e6-0733-4e31-b838-9bb62567fd65",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Fatti interessanti sulla Puglia",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "7bdd3a27-3ca9-48a2-8489-80133c7381c9",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Trivia",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "f6e54a00-a393-4151-aef2-f3f8282bb2fb",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Can you tell me an interesting fact",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "13ea77c8-2774-42bb-b9a9-454bbe35fa1b",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Interesting facts",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "76bca5bf-2418-44f4-8151-2c6679d5e672",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Can you tell me a trivia",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "aab5c294-56af-4772-a8d9-ae2e3d4d9a0d",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": true
+}
